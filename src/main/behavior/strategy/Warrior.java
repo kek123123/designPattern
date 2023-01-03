@@ -1,14 +1,17 @@
 package main.behavior.strategy;
 
-public class Warrior implements Character {
+public class Warrior {
 
-    private final Weapon weapon;
+    private Weapon weapon;
 
     public Warrior(Weapon weapon) {
         this.weapon = weapon;
     }
 
-    @Override
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
     public void attack() {
         weapon.attack();
     }

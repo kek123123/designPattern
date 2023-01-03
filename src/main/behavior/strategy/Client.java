@@ -4,11 +4,10 @@ public class Client {
 
     public static void main(String[] args) {
 
-        Weapon ax = new Ax();
-
-        Character warrior = new Warrior(ax);
-
+        Warrior warrior = new Warrior(new Ax());
         warrior.attack();
 
+        warrior.setWeapon(new Knife());
+        warrior.attack();
     }
 }
