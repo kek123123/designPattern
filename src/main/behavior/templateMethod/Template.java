@@ -15,4 +15,8 @@ public interface Template {
     default boolean hook() {
         return true;
     }
+
+    private void test() {
+
+    }
 }
